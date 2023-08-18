@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="post">
+	<form method="post" action="my.js">
 		<lable for="name">name</lable>
 		<input type="text" name="name" id="name" placeholder="name" required><br>
 
@@ -16,13 +16,14 @@
 		<input type="email" name="email" id="email" placeholder="email" required><br>
 
 		<lable for="gender">gender</lable><br>
-		<input type="radio" name="gender_m" required>
-			<lable for="gender_m">M</lable>	
-		<input type="radio" name="gender_f" required>
-			<lable for="gender_f">F</lable><br>
+		<input type="radio" name="gender" required>
+			<lable for="gender">M</lable>	
+		<input type="radio" name="gender" required>
+			<lable for="gender">F</lable><br>
 
+		<label for="cars">cars</label>
 		<select for="cars">
-			<option name="cars"  disabled>Please Select Cars</option>
+			<option name="cars" id="cars" disabled>Please Select Cars</option>
 			<option>BMW</option>
 			<option>Audi</option>
 			<option>Mercedez</option>
